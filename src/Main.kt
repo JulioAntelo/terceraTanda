@@ -2,26 +2,9 @@ import SolucionesKotlin.*
 fun main() {
     while (true) {
 
+        mostrarMenuEjercicios()
 
-        println("\n--- Menú de Ejercicios ---")
-        println("1. Ejercicio 1")
-        println("2. Ejercicio 2")
-        println("3. Ejercicio 3")
-        println("4. Ejercicio 4")
-        println("5. Ejercicio 5")
-        println("6. Ejercicio 6")
-        println("7. Ejercicio 7")
-        println("8. Ejercicio 8")
-        println("9. Ejercicio 9")
-        println("10. Ejercicio 10")
-        println("11. Ejercicio 11")
-        println("12. Ejercicio 12")
-        println("13. Ejercicio 13")
-        println("14. Ejercicio 14")
-        println("15. Salir")
-        print("Selecciona una opción: ")
-
-        var numeroEjercicio = readln().toInt()
+        val numeroEjercicio = readln().toInt()
 
         when (numeroEjercicio) {
             1 -> Solucion_1()
@@ -44,4 +27,16 @@ fun main() {
             break
         }
     }
+}
+
+fun mostrarMenuEjercicios() {
+    println("\n--- Menú de Ejercicios ---")
+    for (i in 1..15) {
+        if (i == 15) {
+            println("$i. Salir")
+        } else {
+            println("$i. Ejercicio $i")
+        }
+    }
+    print("Selecciona una opción: ")
 }
