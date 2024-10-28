@@ -59,7 +59,4 @@ fun Solucion_14 () {
         }
     }
 }
-class Videojuego(val titulo: String, val plataforma: String, var horasJugadas: Int) {
-
-
-}
+class Videojuego(val titulo: String, val plataforma: String, var horasJugadas: Int)
